@@ -1,6 +1,6 @@
-0.1.1dev (unreleased)
----------------------
-- ...
+0.1.1 (2013-04-23)
+------------------
+- Fix a crash with Facebook auth because its response is not JSON.
 
 0.1 (2013-04-23)
 ----------------
