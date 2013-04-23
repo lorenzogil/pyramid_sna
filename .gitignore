@@ -1,0 +1,7 @@
+*.py[co]
+*.egg
+*.egg-info
+
+# Unit test / coverage reports
+.coverage
+.tox
