@@ -91,7 +91,9 @@ class Oauth2ClientTests(unittest.TestCase):
 
         with patch('requests.post') as fake:
             fake.return_value.status_code = 200
-            fake.return_value.json = lambda: None
+            def non_valid_json():
+                raise ValueError()
+            fake.return_value.json = non_valid_json
             fake.return_value.text = 'access_token=qwerty'
             request.session['state'] = 'random-string'
             response = oauth2_step2(request, token_uri,
