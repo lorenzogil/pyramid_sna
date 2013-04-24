@@ -7,18 +7,6 @@ README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 
 requires = [
-    # indirect dependencies
-    'Beaker==1.6.4',            # required by pyramid_beaker
-    'Chameleon==2.11',          # required by pyramid
-    'Mako==0.7.3',              # required by pyramid
-    'PasteDeploy==1.5.0',       # required by pyramid
-    'repoze.lru==0.6',          # required by pyramid
-    'translationstring==1.1',   # required by pyramid
-    'venusian==1.0a8',          # required by pyramid
-    'WebOb==1.2.3',             # required by pyramid
-    'zope.interface==4.0.5',    # required by pyramid
-
-    # direct dependencies
     'pyramid==1.4',
     'pyramid_beaker==0.7',
     'requests==1.2.0',
