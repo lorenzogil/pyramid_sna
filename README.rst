@@ -10,3 +10,5 @@ It is released under the terms of a 3 clause BSD license and it is
 based on code originally from the
 `Yith Library Server <https://github.com/Yaco-Sistemas/yith-library-server>`_
 project.
+
+You can learn how to use it reading the documentation in the *docs* directory.
