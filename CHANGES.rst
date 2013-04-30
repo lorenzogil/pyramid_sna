@@ -1,3 +1,7 @@
+0.2 (2013-04-30)
+----------------
+- Add documentation.
+
 0.1.2 (2013-04-24)
 ------------------
 - Make the library easier to depend on by not pinning the versions
