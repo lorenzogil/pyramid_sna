@@ -102,13 +102,13 @@ class Oauth2ClientTests(unittest.TestCase):
             self.assertEqual(response, 'qwerty')
 
     def test_get_user_info(self):
+        from pyramid.httpexceptions import HTTPUnauthorized
         with patch('requests.get') as fake:
             fake.return_value.status_code = 401
             fake.return_value.text = 'Unauthorized request'
 
-            response = get_user_info('http://example.com/info', 'qwerty')
-            self.assertEqual(response.status, '401 Unauthorized')
-            self.assertEqual(response.message, 'Unauthorized request')
+            self.assertRaises(HTTPUnauthorized, get_user_info,
+                              'http://example.com/info', 'qwerty')
 
         with patch('requests.get') as fake:
             fake.return_value.status_code = 200
