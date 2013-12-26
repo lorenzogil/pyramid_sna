@@ -28,6 +28,6 @@ def liveconnect_callback(request):
     user_id = info['id']
     info['screen_name'] = info.get('name', '')
     if 'wl.emails' in settings['liveconnect_scope']:
-        info['email'] = info.get('emails', {}).get('preferred', '')
+        info['email'] = info.get('emails', {}).get('account', '')
 
     return settings['liveconnect_callback'](request, user_id, info)
