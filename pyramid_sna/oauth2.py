@@ -78,6 +78,6 @@ def get_user_info(info_uri, access_token):
     response = requests.get(info_uri, headers=headers)
 
     if response.status_code != 200:
-        return HTTPUnauthorized(response.text)
+        raise HTTPUnauthorized(response.text)
 
     return response.json()
