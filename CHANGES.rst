@@ -1,3 +1,8 @@
+0.3 (2013-12-30)
+----------------
+- Add support for Microsoft Live Connect. Contributed by
+  Antonio Perez-Aranda Alcaide
+
 0.2 (2013-04-30)
 ----------------
 - Add documentation.
