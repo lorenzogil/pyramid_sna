@@ -7,9 +7,9 @@ README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 
 requires = [
-    'pyramid==1.4',
-    'pyramid_beaker==0.7',
-    'requests==1.2.0',
+    'pyramid',
+    'pyramid_beaker',
+    'requests',
 ]
 
 test_requires = [
@@ -25,7 +25,7 @@ testing_extras = test_requires + [
 
 setup(
     name='pyramid_sna',
-    version='0.3',
+    version='0.3.1',
     description='Pyramid Social Network Authentication',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[

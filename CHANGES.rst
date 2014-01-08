@@ -1,3 +1,8 @@
+0.3.1 (2014-01-08)
+------------------
+- Don't pin requirement versions so applications using pyramid_sna
+  can decide what version they want.
+
 0.3 (2013-12-30)
 ----------------
 - Add support for Microsoft Live Connect. Contributed by
