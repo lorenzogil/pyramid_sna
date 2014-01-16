@@ -18,6 +18,11 @@ def read_setting_from_env(settings, key, default=None):
         return settings.get(key, default)
 
 
+def get_available_providers():
+    """Return a tuple of available providers"""
+    return ('facebook', 'google', 'liveconnect')
+
+
 def include_google(config):
     settings = config.registry.settings
 
