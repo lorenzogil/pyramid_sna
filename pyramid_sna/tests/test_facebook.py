@@ -15,7 +15,7 @@ def example_callback(*args, **kwargs):
     pass  # pragma: no cover
 
 
-class GoogleConfigTests(unittest.TestCase):
+class FacebookConfigTests(unittest.TestCase):
 
     def test_incomplete_config1(self):
         config = testing.setUp(settings={})
