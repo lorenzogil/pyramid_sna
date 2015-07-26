@@ -1,10 +1,14 @@
 import os
 from pyramid.config import Configurator
+from pyramid.session import SignedCookieSessionFactory
 
 
 def main(global_config, **settings):
     config = Configurator(settings=settings)
-    config.include('pyramid_beaker')
+
+    session_factory = SignedCookieSessionFactory('s3cr3t')
+    config.set_session_factory(session_factory)
+
     includeme(config)
 
     return config.make_wsgi_app()
