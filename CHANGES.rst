@@ -1,3 +1,8 @@
+0.3.2 (2015-07-25)
+------------------
+- Remove pyramid_beaker dependency and just require any valid
+  Pyramid Session Factory.
+
 0.3.1 (2014-01-08)
 ------------------
 - Don't pin requirement versions so applications using pyramid_sna

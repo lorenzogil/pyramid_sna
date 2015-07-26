@@ -24,7 +24,7 @@ testing_extras = test_requires + [
 
 setup(
     name='pyramid_sna',
-    version='0.3.1',
+    version='0.3.2',
     description='Pyramid Social Network Authentication',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
